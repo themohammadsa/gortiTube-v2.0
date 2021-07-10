@@ -1,8 +1,8 @@
-import { useState } from "react";
-import { watchById } from "../../utils/Functions";
-import { FooterButtons } from "./FooterButtons";
-import { dateToString, viewsToString } from "../../utils/Functions";
-import { AiOutlineDown, AiOutlineUp } from "react-icons/ai";
+import { useState } from 'react';
+import { watchById } from '../../utils/Functions';
+import { FooterButtons } from './FooterButtons';
+import { dateToString, viewsToString } from '../../utils/Functions';
+import { AiOutlineDown, AiOutlineUp } from 'react-icons/ai';
 
 export const VideoPlayer = ({ renderedVideo }) => {
   const [showDescription, setShowDescription] = useState(false);
@@ -17,19 +17,19 @@ export const VideoPlayer = ({ renderedVideo }) => {
               title="YouTube video player"
               frameBorder="0"
               allowFullScreen
-            ></iframe>{" "}
+            ></iframe>{' '}
           </div>
 
           <div
-            style={{ margin: "1.5rem 0.75rem" }}
+            style={{ margin: '1.5rem 0.75rem', width: '92%' }}
             className="flex-column align-left "
           >
             <h2 className="ft-wt-700"> {renderedVideo.title} </h2>
 
             <div>
               <p className="color-grey">
-                {viewsToString(renderedVideo.views)} views •{" "}
-                {dateToString(renderedVideo.date)}{" "}
+                {viewsToString(renderedVideo.views)} views •{' '}
+                {dateToString(renderedVideo.date)}{' '}
               </p>
             </div>
 
@@ -37,8 +37,8 @@ export const VideoPlayer = ({ renderedVideo }) => {
               <div className="flex-row">
                 <img src={renderedVideo.avatar} className="avatar" />
                 <span className="color-bg-blue ft-wt-700">
-                  {" "}
-                  {renderedVideo.author}{" "}
+                  {' '}
+                  {renderedVideo.author}{' '}
                 </span>
               </div>
               <div className="flex-row">
@@ -53,11 +53,11 @@ export const VideoPlayer = ({ renderedVideo }) => {
                     className="drop-down-icon"
                   />
                 )}
-              </div>{" "}
+              </div>{' '}
             </div>
 
             {showDescription && (
-              <span style={{ margin: "0.5rem 0.25rem" }}>
+              <span style={{ margin: '0.5rem 0.25rem' }}>
                 {renderedVideo.description}.
               </span>
             )}

@@ -1,14 +1,14 @@
-import { useLibraryContext } from "../../context/LibraryContext";
-import { useToggleContext } from "../../context/ToggleContext";
-import { IoIosSend } from "react-icons/io";
-import { MdPlaylistAdd } from "react-icons/md";
+import { useLibraryContext } from '../../context/LibraryContext';
+import { useToggleContext } from '../../context/ToggleContext';
+import { IoIosSend } from 'react-icons/io';
+import { MdPlaylistAdd } from 'react-icons/md';
 import {
   AiOutlineClockCircle,
   AiFillClockCircle,
   AiFillHeart,
-  AiOutlineHeart
-} from "react-icons/ai";
-import { PlaylistModal } from "./PlaylistModal";
+  AiOutlineHeart,
+} from 'react-icons/ai';
+import { PlaylistModal } from './PlaylistModal';
 
 export const FooterButtons = ({ renderedVideo }) => {
   const { state, dispatch } = useLibraryContext();
@@ -16,22 +16,22 @@ export const FooterButtons = ({ renderedVideo }) => {
     setDisplayPlaylistFn,
     displayPlaylist,
     currentVideo,
-    setCurrentVideo
+    setCurrentVideo,
   } = useToggleContext();
 
   return (
     <>
       <div
         className="flex-row justify-space-evenly footer-buttons"
-        style={{ marginTop: "1rem" }}
+        style={{ marginTop: '1rem' }}
       >
         {!state.likedVideos.some((video) => video.id === renderedVideo.id) ? (
           <AiOutlineHeart
             className="react-icon"
             onClick={() => {
               dispatch({
-                type: "ADD_TO_LIKED_VIDEOS",
-                payload: renderedVideo
+                type: 'ADD_TO_LIKED_VIDEOS',
+                payload: renderedVideo,
               });
             }}
           />
@@ -40,8 +40,8 @@ export const FooterButtons = ({ renderedVideo }) => {
             className="react-icon"
             onClick={() => {
               dispatch({
-                type: "REMOVE_FROM_LIKED_VIDEOS",
-                payload: renderedVideo
+                type: 'REMOVE_FROM_LIKED_VIDEOS',
+                payload: renderedVideo,
               });
             }}
           />
@@ -52,8 +52,8 @@ export const FooterButtons = ({ renderedVideo }) => {
             className="react-icon"
             onClick={() =>
               dispatch({
-                type: "ADD_TO_WATCH_LATER",
-                payload: renderedVideo
+                type: 'ADD_TO_WATCH_LATER',
+                payload: renderedVideo,
               })
             }
           />
@@ -62,8 +62,8 @@ export const FooterButtons = ({ renderedVideo }) => {
             className="react-icon"
             onClick={() =>
               dispatch({
-                type: "REMOVE_FROM_WATCH_LATER",
-                payload: renderedVideo
+                type: 'REMOVE_FROM_WATCH_LATER',
+                payload: renderedVideo,
               })
             }
           />
