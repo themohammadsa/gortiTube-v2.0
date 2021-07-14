@@ -57,5 +57,5 @@ Here's the link for the live demo:
 
 Contributions, issues, and feature requests are welcome!   
 
-Feel free to check the [issue](https://github.com/themohammadsa/gortiTube/issues/4) page.
+Feel free to check the [issue](https://github.com/themohammadsa/gortiTube-v2.0/issues/2) page.
 
