@@ -5,9 +5,6 @@
 This is a full-stack video-library application having all the core functionalities of a video-library application. The CSS used has been made by using my own [component library](https://gorti.netlify.app/).
 This is the third project out of five projects created by learning from [@neogcamp](https://neog.camp/) for [@roc8](https://www.roc8.careers/).
 
-Here's the link for the live demo:
-- [Live Demo](https://gortitube.netlify.app/)
-
 ## Preview 
 
 ![demo](/demo.gif)
