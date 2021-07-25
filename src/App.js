@@ -4,7 +4,7 @@ import { MobileNav } from "./components/MobileNav";
 import { Router } from "./components/Router";
 
 export default function App() {
-  return (
+return (
     <div className="App">
       <Header />
       <MobileNav />
