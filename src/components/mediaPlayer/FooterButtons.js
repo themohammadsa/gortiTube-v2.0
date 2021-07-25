@@ -68,7 +68,6 @@ export const FooterButtons = ({ renderedVideo }) => {
             }
           />
         )}
-        <IoIosSend className="react-icon" />
         <MdPlaylistAdd
           className="react-icon"
           onClick={() => {
